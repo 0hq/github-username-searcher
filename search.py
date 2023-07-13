@@ -20,7 +20,7 @@ def generate_usernames(length):
     """
     This function generates all possible usernames of the given length using lowercase letters.
     """
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789'
     return (''.join(i) for i in itertools.product(alphabet, repeat=length))
 
 def read_dictionary(file_name):
